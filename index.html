@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
 
@@ -16,6 +18,17 @@
  </div>
 <div class="container">
 <div class="row">
+<canvas id="myCanvas" width="300" height="450" style="border:1px solid #d3d3d3;">
+</canvas>
+</div>
+</div>
+<script>
 
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(10, 75, 50, 0, 2 * Math.PI);
+ctx.stroke();
+</script>
 </body>
 <html>
